@@ -58,23 +58,23 @@ public class Calcolatrice {
         double rSenoN1;
         double n1Rad = Math.toRadians(n1);
         rSenoN1 = Math.sin(n1Rad);
-        System.out.println("Il risultato del seno di n1 è: " + rSenoN1+" Radiante: "+n1Rad); // stampa del seno di n1
+        System.out.println("Il risultato del seno di n1 è: " + rSenoN1+" Radianti: "+n1Rad); // stampa del seno di n1
 
         /* Sezione Seno n2 */
         double rSenoN2;
         double n2Rad = Math.toRadians(n2);
         rSenoN2 = Math.sin(n2Rad);
-        System.out.println("Il risultato del seno di n2 è: " + rSenoN2 +" Radiante: "+n2Rad); // stampa del seno di n2
+        System.out.println("Il risultato del seno di n2 è: " + rSenoN2 +" Radianti: "+n2Rad); // stampa del seno di n2
 
         /* Sezione Coseno n1 */
         double rCosenoN1;
-        rCosenoN1 = Math.sin(n1Rad);
-        System.out.println("Il risultato del coseno di n1 è: " + rCosenoN1 +" Radiante: "+n1Rad); // stampa del coseno di n1
+        rCosenoN1 = Math.cos(n1Rad);
+        System.out.println("Il risultato del coseno di n1 è: " + rCosenoN1 +" Radianti: "+n1Rad); // stampa del coseno di n1
 
-        /* Sezione Coeno n2 */
+        /* Sezione Coseno n2 */
         double rCosenoN2;
-        rCosenoN2 = Math.sin(n2Rad);
-        System.out.println("Il risultato del coseno di n2 è: " + rCosenoN2 +" Radiante: "+n2Rad); // stampa del coseno di n2
+        rCosenoN2 = Math.cos(n2Rad);
+        System.out.println("Il risultato del coseno di n2 è: " + rCosenoN2 +" Radianti: "+n2Rad); // stampa del coseno di n2
 
     } // end main
 } // end class
