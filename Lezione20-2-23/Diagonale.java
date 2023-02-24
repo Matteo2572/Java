@@ -16,6 +16,5 @@ public class Diagonale {
 
         double diagonale = Math.sqrt(Math.pow(base, 2)+(Math.pow(altezza, 2)));
         System.out.println(diagonale);
-
     }
 }
