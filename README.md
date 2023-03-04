@@ -23,4 +23,7 @@ Email :matteo.imbastaro@engimtorino.net PW:Engim2022
         rProd=pN*sN 
         rDiv=pN/sN
 
+UX = User Experience, programma a prova di stupido, che sia possibile usare senza difficoltà.
+limite array capacità di memorizz, se voglio aggiungere un elemento devo copiare il contenuto nell'array fino a n-1, inserirlo e copiare il resto
+
 
