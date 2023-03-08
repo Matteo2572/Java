@@ -22,21 +22,23 @@ public class Es1 {
         int somma = 0;
         int cfrGiuste = 0;
 
-        for (int i = 0; i < nTentativi; i++) {
-            while (tentativo.length() != indovina.length()) {
-                System.out.println("Inserisci il " + i + " tentativo");
-                tentativo = tastiera.nextLine();
-            }
+        for (int i = 1; i <= nTentativi; i++) {
+            System.out.println("Inserisci il " + i + " tentativo");
+            tentativo = tastiera.nextLine();
             if (indovina.equals(tentativo)) {
                 System.out.println("Hai indovinato");
                 break;
-            } else if (indovina.charAt(i) == tentativo.charAt(i)) {
-                cfrGiuste++;
-                somma += indovina.charAt(i);
-            }
-            System.out.println(cfrGiuste + " " + somma);
+            } else{
+                for (int j = 0; j < tentativo.length(); j++) {
+                    if (indovina.charAt(j) == tentativo.charAt(j)) {
+                        cfrGiuste++;
+                        somma += Character.getNumericValue(tentativo.charAt(j));
+                    }
+                }
         }
-        
+            System.out.println(cfrGiuste + " " + somma);
+            cfrGiuste = 0;
+            somma = 0;
+        }
     }
-
 }
