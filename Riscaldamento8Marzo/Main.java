@@ -11,5 +11,20 @@ public class Main {
         System.out.println(conto1.toString());
         System.out.println(conto2.toString());
 
+        int n = 5;
+        int nPari = 10;
+        System.out.println(fattoriale(n));
+        stampaPari(nPari);
     }
+
+        public static int fattoriale(int n){
+            if (n>0) n = n * fattoriale(n-1);
+            else n = 1;
+            return n;
+        }
+
+        public static void stampaPari(int nPari){
+            if (nPari>0) stampaPari(nPari-2);
+            if (nPari%2 == 0) System.out.println(nPari);
+        }
 }
